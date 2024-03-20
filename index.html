@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Home Page</h1>
+        <div class="custom-select">
+            <select id="issueSelect">
+                <option value="" selected disabled>Choose Issue</option>
+                <option value="drivingLicense">Driving License Renewal</option>
+                <option value="sales">Sales</option>
+                <option value="documentPickup">Document Pickup</option>
+                <option value="documentDispatch">Document Dispatch</option>
+                <option value="documentReturn">Document Return</option>
+                <option value="payment">Payment</option>
+            </select>
+        </div>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        $('#issueSelect').change(function() {
+            var selectedIssue = $(this).val();
+            if (selectedIssue) {
+            window.location.href = 'drivingLicense.html';
+            }
+        });
+        });
+    </script>
+
+</body>
+</html>

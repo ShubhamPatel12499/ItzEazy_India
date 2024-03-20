@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driving License Renewal</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1 style="text-align: center">Driving Licence Renewal</h1>
+  <div class="form-container">
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+    </div>
+
+    <h2 style="color: red; text-align: center;">Let's get Started!</h2>
+    <p style="text-align: center;">Add your details.</p>
+
+    <form id="license-details-form" >
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter Name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter Email" required>
+      </div>
+      
+      <div class="form-group">
+        <label>Nature of Driving Licence:</label><br>
+        <input type="radio" id="private" name="driving-license-type" value="private">
+        <label for="private">Private</label>
+        <input type="radio" id="commercial" name="driving-license-type" value="commercial">
+        <label for="commercial">Commercial</label>
+      </div>
+      
+      <div class="form-group">
+        <label>Type of Previous Driving Licence:</label><br>
+        <input type="radio" id="paper" name="previous-license-type" value="paper">
+        <label for="paper">Paper Driving Licence</label>
+        <input type="radio" id="smart" name="previous-license-type" value="smart">
+        <label for="smart">Smart Driving Licence</label>
+      </div>
+
+      <div style="text-align: center;">
+        <button id="back-button" href="index.html">Back</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
